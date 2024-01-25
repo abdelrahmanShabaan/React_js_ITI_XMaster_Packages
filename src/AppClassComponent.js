@@ -43,9 +43,11 @@ class AppClassComponent extends React.Component{
     return(
         //fregement elements
         <>
-        <h1>I am class compnent</h1>
+            {/* way to write style {{  }} */}
+        <h1 style={{color:'red'}}>I am class compnent</h1>
         <h2>name : {this.state.name} </h2>
         <h3>age : {this.state.age} </h3>
+
         </>
     )
 
