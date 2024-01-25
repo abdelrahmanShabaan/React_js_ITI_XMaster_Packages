@@ -1,5 +1,6 @@
 import React from "react";
 import MyButton from "./MyButton";
+import MyTitle from "./MyTitle";
 
 
 class AppClassComponent extends React.Component{
@@ -60,6 +61,8 @@ class AppClassComponent extends React.Component{
         <h3>age : {this.state.age} </h3>
         <button onClick={()=> this.changeUserInfo()} >change User </button>
         <MyButton name="Hello from class comp" color="green"/>
+
+        <MyTitle title= "I am from class "/> 
         </>
     )
 

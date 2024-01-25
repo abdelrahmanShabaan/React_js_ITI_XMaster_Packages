@@ -1,10 +1,10 @@
 
 
-function MyTitle() 
+function MyTitle(props) 
 {
 
         return( 
-            <h1> Hello world ! </h1>
+            <h1> {props.title} </h1>
 
         )
 
