@@ -14,7 +14,7 @@ class MyButton extends React.Component{
 
             return(
                 <> 
-                    <button style={{backgroundColor: "yellow"}}> {this.props.name}</button>
+                    <button style={{backgroundColor: this.props.color}}> {this.props.name}</button>
                 </>
             )
     }

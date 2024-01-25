@@ -8,7 +8,7 @@ function App() {
     <div className="App"> 
       <h1>Hello News Page</h1>
       <AppClassComponent />
-      <MyButton name="Hello from app component"/> 
+      <MyButton name="Hello from app component" color="red"/> 
     </div> 
   );
 }

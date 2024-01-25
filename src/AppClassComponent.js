@@ -59,7 +59,7 @@ class AppClassComponent extends React.Component{
         <h2>name : {this.state.name} </h2>
         <h3>age : {this.state.age} </h3>
         <button onClick={()=> this.changeUserInfo()} >change User </button>
-        <MyButton name="Hello from class comp" />
+        <MyButton name="Hello from class comp" color="green"/>
         </>
     )
 
