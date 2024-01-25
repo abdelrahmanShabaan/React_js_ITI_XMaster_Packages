@@ -5,12 +5,16 @@ import React from "react";
 class MyButton extends React.Component{
 
 
+    constructor(props){
+        super()
+    }
+
 
     render(){
 
             return(
                 <>
-                    <button>Button</button>
+                    <button> {this.props.name}</button>
                 </>
             )
     }
