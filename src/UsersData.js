@@ -5,7 +5,6 @@ import MyButton from "./MyButton";
 
 class UsersData extends React.Component{
 
-
         constructor(){
             super();
             this.state = {
@@ -17,7 +16,7 @@ class UsersData extends React.Component{
             return(
                 <>
                      <h1 className="text-danger text center"> {this.state.title} </h1>
-                     <MyButton  color="green" name="i am user compontent"/>
+                     <MyButton  color="green" name="i am users compontent"/>
                 </>
             )
         }
