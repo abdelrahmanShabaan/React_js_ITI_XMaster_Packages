@@ -36,6 +36,16 @@ class AppClassComponent extends React.Component{
             //when i move from page to another
             console.log("I will be Removed soon!");
         }
+
+
+        changeUserInfo = ()=> {
+            this.setState ({
+                name:"Abdelrahman",
+                age : 26,
+                position : "software developer"
+            })
+        }
+
     
     //every once repeat again
     render()
@@ -47,7 +57,7 @@ class AppClassComponent extends React.Component{
         <h1 style={{color:'red'}}>I am class compnent</h1>
         <h2>name : {this.state.name} </h2>
         <h3>age : {this.state.age} </h3>
-
+        <button onClick={()=> this.changeUserInfo()} >change User </button>
         </>
     )
 
