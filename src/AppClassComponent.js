@@ -1,4 +1,5 @@
 import React from "react";
+import MyButton from "./MyButton";
 
 
 class AppClassComponent extends React.Component{
@@ -58,6 +59,7 @@ class AppClassComponent extends React.Component{
         <h2>name : {this.state.name} </h2>
         <h3>age : {this.state.age} </h3>
         <button onClick={()=> this.changeUserInfo()} >change User </button>
+        <MyButton />
         </>
     )
 
