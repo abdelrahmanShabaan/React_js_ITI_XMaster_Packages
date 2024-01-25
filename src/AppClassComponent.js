@@ -8,6 +8,14 @@ class AppClassComponent extends React.Component{
         console.log("hello constructor");
     // that's  make call for all components that i make extend from it
         super();
+
+        this.state =
+        {
+            //define variables
+                name: "ali",
+                age : 20,
+                position: "developer"
+        }
     }
 
 
@@ -29,11 +37,13 @@ class AppClassComponent extends React.Component{
             console.log("I will be Removed soon!");
         }
     
-
-    render(){
+    //every once repeat again
+    render()
+    {
         return(<h1>I'm class compntent</h1>)
-        } 
+    } 
  
+
 }
 
 
