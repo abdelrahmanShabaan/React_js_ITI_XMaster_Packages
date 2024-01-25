@@ -14,17 +14,19 @@ class AppClassComponent extends React.Component{
         componentDidMount(){
             // when load class like constructor 
             // document.ready (best example to use APIS)
-            console.log("hello did");
+            console.log("I am component Did Mount");
         }
 
         componentDidUpdate(){
             // when load class like constructor 
-            console.log("hello update");
+            //calling when make change in component
+            console.log("I am component Did Update ");
         }
 
         componentWillUnmount(){
             // when load class like constructor 
-            console.log("hello mount");
+            //when i move from page to another
+            console.log("I will be Removed soon!");
         }
     
 
