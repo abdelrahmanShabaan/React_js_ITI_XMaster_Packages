@@ -25,7 +25,7 @@ class AppClassComponent extends React.Component{
             console.log("I am component Did Mount");
         }
 
-        componentDidUpdate(){
+        componentDidUpindate(){
             // when load class like constructor 
             //calling when make change in component
             console.log("I am component Did Update ");
@@ -44,8 +44,8 @@ class AppClassComponent extends React.Component{
         //fregement elements
         <>
         <h1>I am class compnent</h1>
-        <h2>name :</h2>
-        <h3>age :</h3>
+        <h2>name : {this.state.name} </h2>
+        <h3>age : {this.state.age} </h3>
         </>
     )
 
