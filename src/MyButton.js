@@ -13,8 +13,8 @@ class MyButton extends React.Component{
     render(){
 
             return(
-                <>
-                    <button> {this.props.name}</button>
+                <> 
+                    <button style={{backgroundColor: "yellow"}}> {this.props.name}</button>
                 </>
             )
     }
