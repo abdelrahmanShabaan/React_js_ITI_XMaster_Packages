@@ -40,7 +40,15 @@ class AppClassComponent extends React.Component{
     //every once repeat again
     render()
     {
-        return(<h1>I'm class compntent</h1>)
+    return(
+        //fregement elements
+        <>
+        <h1>I am class compnent</h1>
+        <h2>name :</h2>
+        <h3>age :</h3>
+        </>
+    )
+
     } 
  
 
