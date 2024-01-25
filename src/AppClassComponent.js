@@ -27,7 +27,7 @@ class AppClassComponent extends React.Component{
             console.log("I am component Did Mount");
         }
 
-        componentDidUpindate(){
+        componentDidUpdate(){
             // when load class like constructor 
             //calling when make change in component
             console.log("I am component Did Update ");
