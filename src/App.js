@@ -6,6 +6,7 @@ import MyTitle from './MyTitle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
+import AppFunctionComponent from './AppFunctionComponent';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AppClassComponent />
       <MyButton name="Hello from app component" color="red"/> 
       <MyTitle title= "I am from apps"/>
+      <AppFunctionComponent />
     </div> 
   );
 }
