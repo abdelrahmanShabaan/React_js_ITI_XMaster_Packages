@@ -3,6 +3,8 @@ import './App.css';
 import AppClassComponent from './AppClassComponent';
 import MyButton from './MyButton';
 import MyTitle from './MyTitle';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
