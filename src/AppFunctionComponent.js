@@ -14,6 +14,14 @@ function AppFunctionComponent(){
     })
 
 
+        //function change
+       const changeInfo = () => {
+            setInfo({
+                //save same defualt
+                ...info,
+                name: "abdelrahman",
+            }) 
+        }
 
     // output
     return(
@@ -23,6 +31,8 @@ function AppFunctionComponent(){
         <h2> My name: {info.name}</h2>
         <h2> My age: {info.age}</h2>
         <h2> My city: {info.city}</h2>
+        <button className="btn btn-info" onClick={()=>changeInfo()}>Change </button>
+
         </>
     )
 
