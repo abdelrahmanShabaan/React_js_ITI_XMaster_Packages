@@ -1,7 +1,7 @@
 import React from "react";
-import MyButton from "./Components/MyButton";
-import MyTitle from "./Components/MyTitle";
 import UsersData from "./UsersData";
+import MyButton from "../Components/MyButton";
+import MyTitle from "../Components/MyTitle";
 
 
 class AppClassComponent extends React.Component{
