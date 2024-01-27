@@ -11,7 +11,7 @@ import AddUser from './AppUser';
 
 function App() {
   return (
-    <div className="App"> 
+    <div> 
      {/* <h1>Hello News Page</h1>
        <Button variant="primary">Primary</Button>{' '}
       <Alert variant="info"> alert—check it out!</Alert>
