@@ -65,8 +65,8 @@ function AddUser(){
             <input type="text" className="form-control" value={data.position}  onChange={(e)=> changeData(e)}  name="postition"/>
             <p className="text-danger">{errors.positionErr}</p>
             </div>
-
-            <button type="submit" className="btn btn-primary">Submit</button>
+            {/* added disable if found errors in variables */}
+            <button disabled={errors.nameError || errors.positionErr} type="submit" className="btn btn-primary">Submit</button>
             </form>
             </div>
             </>
