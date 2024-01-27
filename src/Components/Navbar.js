@@ -31,6 +31,9 @@ function Navbar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="/usersdata">Users Data</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/users">Users List</Link>
+                </li>
                
             </ul>
             </div>

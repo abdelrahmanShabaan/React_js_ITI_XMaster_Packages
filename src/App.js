@@ -9,6 +9,7 @@ import UsersData from './Pages/UsersData';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
 import NotFound from './Pages/NotFound';
+import UsersList from './Pages/UsersList';
 
 function App() {
 
@@ -33,7 +34,8 @@ function App() {
       <Route exact path={"/class"} component={AppClassComponent} />
       <Route exact path={"/fun"} component={AppFunctionComponent} />
       <Route exact path={"/adduser/:id"} component={AddUser} />
-      <Route exact path={"/users"} component={UsersData} />
+      <Route exact path={"/users"} component={UsersList} />
+      <Route exact path={"/userslist"} component={UsersData} />
 
       <Route exact path={"*"} component={NotFound}/>
       </Switch>
