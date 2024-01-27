@@ -7,8 +7,11 @@ import AppClassComponent from './Pages/AppClassComponent';
 import AppFunctionComponent from './Pages/AppFunctionComponent';
 import UsersData from './Pages/UsersData';
 import Home from './Pages/Home';
+import Navbar from './Components/Navbar';
 
 function App() {
+
+  
   return (
     <div> 
      {/* <h1>Hello News Page</h1>
@@ -20,13 +23,16 @@ function App() {
       <AppFunctionComponent /> */}
       {/* <AddUser /> */}
 
+
+   
       <BrowserRouter>
+      <Navbar /> 
       <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/class"} component={AppClassComponent} />
-      <Route path={"/fun"} component={AppFunctionComponent} />
-      <Route path={"/adduser"} component={AddUser} />
-      <Route path={"/users"} component={UsersData} />
+      <Route exact path={"/"} component={Home} />
+      <Route exact path={"/class"} component={AppClassComponent} />
+      <Route exact path={"/fun"} component={AppFunctionComponent} />
+      <Route exact path={"/adduser"} component={AddUser} />
+      <Route exact path={"/users"} component={UsersData} />
       </Switch>
       </BrowserRouter>
 
