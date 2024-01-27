@@ -1,12 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import AppClassComponent from './AppClassComponent';
-import MyButton from './MyButton';
-import MyTitle from './MyTitle';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
-import AppFunctionComponent from './AppFunctionComponent';
 import AddUser from './AppUser';
 
 function App() {

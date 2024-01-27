@@ -1,6 +1,6 @@
 import React from "react";
-import MyButton from "./MyButton";
-import MyTitle from "./MyTitle";
+import MyButton from "./Components/MyButton";
+import MyTitle from "./Components/MyTitle";
 import UsersData from "./UsersData";
 
 
