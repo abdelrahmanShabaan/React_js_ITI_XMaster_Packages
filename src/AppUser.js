@@ -4,6 +4,10 @@ import { useState } from "react";
 
 function AddUser(){
 
+
+    //console.log(props history , location . match)
+
+  
         //define const to save come data from forms
         const[data, setData] = useState({
             name : "ali",

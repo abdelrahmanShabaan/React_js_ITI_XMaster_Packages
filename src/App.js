@@ -12,7 +12,7 @@ import NotFound from './Pages/NotFound';
 
 function App() {
 
-  
+
   return (
     <div> 
      {/* <h1>Hello News Page</h1>
@@ -32,7 +32,7 @@ function App() {
       <Route exact path={"/"} component={Home} />
       <Route exact path={"/class"} component={AppClassComponent} />
       <Route exact path={"/fun"} component={AppFunctionComponent} />
-      <Route exact path={"/adduser"} component={AddUser} />
+      <Route exact path={"/adduser/:id"} component={AddUser} />
       <Route exact path={"/users"} component={UsersData} />
 
       <Route exact path={"*"} component={NotFound}/>
