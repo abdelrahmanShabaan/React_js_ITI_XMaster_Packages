@@ -14,16 +14,15 @@ function Blogs() {
 
     // Call API
     useEffect(() => {
-        axios.get(`https://newsapi.org/v2/everything?apiKey=681cc0004a6e4c13862d656ae468bdcc&q={keyword}`)
+        axios.get(`https://newsapi.org/v2/everything?apiKey=681cc0004a6e4c13862d656ae468bdcc&q=${keyword}`)
             .then((res)=> {setBlogs(res.data.articles)})
             .catch((err) => console.log(err));
-        },[])
+        },[keyword])
 
 
             //function change
-            const handleChange  = (e) => {
-
-                            console.log(e.target.value)
+            const handleChange = (e) => {
+                setKeyword(e.target.value)
             } 
 
         return (
@@ -33,8 +32,8 @@ function Blogs() {
                 onChange={(e)=> handleChange(e)}>
                     <option selected>Choose...</option>
                     <option value="sports">sport</option>
-                    <option value="development">development</option>
-                    <option value="food">foods</option>
+                    <option value="programming">programming</option>
+                    <option value="foods">foods</option>
                 </select>
 
 
