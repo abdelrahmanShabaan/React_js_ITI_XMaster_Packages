@@ -31,19 +31,17 @@ function AppFunctionComponent(){
         
         //component did update + listen what will change
         useEffect(() =>{
-            console.log("compoenent did mount")
+            console.log("compoenent did update")
         },[name , info])
 
+        // component did unmount
+        useEffect(() =>{
+            return()=>{
+                console.log("compoenent did unmount")
+            }
+        },[])
 
         
-
-
-        
-
-
-
-
-
     // output
     return(
         <>
