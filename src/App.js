@@ -11,6 +11,7 @@ import Navbar from './Components/Navbar';
 import NotFound from './Pages/NotFound';
 import UsersList from './Pages/UsersList';
 import UserDetails from './Pages/UserDetails';
+import Blogs from './Pages/Blogs';
 
 function App() {
 
@@ -38,6 +39,8 @@ function App() {
       <Route exact path={"/users"} component={UsersList} />
       <Route exact path={"/userslist"} component={UsersData} />
       <Route exact path={"/user/:id"} component={UserDetails} />
+      <Route exact path={"/blogs"} component={Blogs} />
+
 
       <Route exact path={"*"} component={NotFound}/>
       </Switch>
