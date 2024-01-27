@@ -6,20 +6,31 @@ import Cart from "../Components/Cart";
 
 function Blogs() {
 
-         // Save data
+         // Save dataname
     const [blogs, setBlogs] = useState([])
+    const [keyword, setKeyword] = useState(["sports"])
+
+    //https://newsapi.org/v2/everything?q={name}&apiKey=681cc0004a6e4c13862d656ae468bdcc
 
     // Call API
     useEffect(() => {
-        axios.get("https://newsapi.org/v2/everything?q=food&apiKey=681cc0004a6e4c13862d656ae468bdcc")
+        axios.get(`https://newsapi.org/v2/everything?apiKey=681cc0004a6e4c13862d656ae468bdcc&q={keyword}`)
             .then((res)=> {setBlogs(res.data.articles)})
             .catch((err) => console.log(err));
         },[])
 
+
+            //function change
+            const handleChange  = (e) => {
+
+                            console.log(e.target.value)
+            } 
+
         return (
             <>
 
-                <select class="form-select" aria-label="Defualt select example">
+                <select class="form-select" aria-label="Defualt select example" 
+                onChange={(e)=> handleChange(e)}>
                     <option selected>Choose...</option>
                     <option value="sports">sport</option>
                     <option value="development">development</option>
