@@ -44,16 +44,24 @@ function AddUser(){
             })
 
            }
+        } //end of function change with event
 
-            
-        } 
+
+        //function submit
+        const submitData = () => {
+            if(!errors.nameError && !errors.positionErr){
+                
+            console.log("forms added succssfully")
+        }   
+    }
+
 
 
     return(
         <>
         <div className="container">
              <h1 className="text-primary text-center">Add User</h1>
-            <form>
+            <form onSubmit={() => submitData()}>
             <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
             <input type="text" className="form-control" value={data.name} onChange={(e)=> changeData(e)} name="name"/>
