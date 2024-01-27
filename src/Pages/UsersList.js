@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
 
@@ -24,10 +25,10 @@ function UsersList(){
         <>
          <h1 className="text-center text-primary">Users List</h1>
 
-         {users.map(user => {
+         {users.map((user, index) => {
             return (
                 <div className="container">
-                    <li className="text-info"> {user.id} </li>
+                   <Link to={`/user/${user.id}`}> <li className="text-info"> {user.id} </li> </Link>
                     <li> {user.col1}  </li>
                 </div>
 
