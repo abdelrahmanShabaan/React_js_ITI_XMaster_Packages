@@ -8,7 +8,7 @@ function Cart(props){
         return(
 
 
-    <>
+         <>
         <div class="card container" style={{width: "50rem"}}>
                 <img class="card-img-top" src={props.image}/>
                     <div class="card-body">

@@ -18,6 +18,15 @@ function Blogs() {
 
         return (
             <>
+
+                <select class="form-select" aria-label="Defualt select example">
+                    <option selected>Choose...</option>
+                    <option value="sports">sport</option>
+                    <option value="development">development</option>
+                    <option value="food">foods</option>
+                </select>
+
+
                 <MyTitle title="Blogs" />
     
                 {blogs.map(blog => (
