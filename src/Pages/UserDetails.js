@@ -14,7 +14,7 @@ function UserDetails() {
                 //console.log(userId);
             const [userInfo , setUserInfo] = useState({})
 
-                //useEffect to loop in the data
+                //useEffect to loops in the data
                 useEffect(()=> {
                     //then axios
                     axios(`https://retoolapi.dev/rPDRQU/data/${userId.id}`)
@@ -22,10 +22,6 @@ function UserDetails() {
                     .catch((err) => {console.log(err)})
 
                 },[])
-
-                
-
-
 
             return(
 
