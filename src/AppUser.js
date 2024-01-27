@@ -48,9 +48,10 @@ function AddUser(){
 
 
         //function submit
-        const submitData = () => {
+        const submitData = (e) => {
+            e.preventDefault()
             if(!errors.nameError && !errors.positionErr){
-                
+            //prevent defualt
             console.log("forms added succssfully")
         }   
     }
@@ -61,7 +62,7 @@ function AddUser(){
         <>
         <div className="container">
              <h1 className="text-primary text-center">Add User</h1>
-            <form onSubmit={() => submitData()}>
+            <form onSubmit={(e) => submitData(e)}>
             <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
             <input type="text" className="form-control" value={data.name} onChange={(e)=> changeData(e)} name="name"/>
