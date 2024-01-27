@@ -37,6 +37,12 @@ function AddUser(){
                 ...data,
                 position : e.target.value
             })
+
+            setError({
+                ...errors,
+                positionErr: e.target.value.length == 0 && "this Field is Required"
+            })
+
            }
 
             
@@ -56,7 +62,7 @@ function AddUser(){
 
             <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">Position</label>
-            <input type="text" className="form-control" value={data.position} name="postition"/>
+            <input type="text" className="form-control" value={data.position}  onChange={(e)=> changeData(e)}  name="postition"/>
             <p className="text-danger">{errors.positionErr}</p>
             </div>
 
