@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom/cjs/react-router-dom.min'
 import AppClassComponent from './Pages/AppClassComponent';
 import AppFunctionComponent from './Pages/AppFunctionComponent';
 import UsersData from './Pages/UsersData';
+import Home from './Pages/Home';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       {/* <AddUser /> */}
 
       <BrowserRouter>
+
+      <Route path={"/"} component={Home} />
       <Route path={"/class"} component={AppClassComponent} />
       <Route path={"/fun"} component={AppFunctionComponent} />
       <Route path={"/adduser"} component={AddUser} />
