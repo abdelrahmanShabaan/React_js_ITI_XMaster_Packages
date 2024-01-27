@@ -68,6 +68,10 @@ function AddUser(){
             if(!errors.nameError && !errors.positionErr){
             //prevent defualt
             console.log("forms added succssfully")
+
+            //added history for home 
+            //history.push("/") //hooks
+            history.push("/");
         }   
     }
 
