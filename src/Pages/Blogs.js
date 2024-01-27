@@ -21,7 +21,7 @@ function Blogs() {
                 <MyTitle title="Blogs" />
     
                 {blogs.map(blog => (
-                    <Cart key={blog.title} name={blog.author} email={blog.title} />
+                    <Cart image={blog.urlToImage} name={blog.author} email={blog.title} />
                 ))}
             </>
         );
