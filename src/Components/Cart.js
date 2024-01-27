@@ -18,8 +18,6 @@ function Cart(props){
                 </div>
         </>
 
-
-
         )
 }
 
