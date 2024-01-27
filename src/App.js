@@ -8,6 +8,7 @@ import AppFunctionComponent from './Pages/AppFunctionComponent';
 import UsersData from './Pages/UsersData';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
+import NotFound from './Pages/NotFound';
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
       <Route exact path={"/fun"} component={AppFunctionComponent} />
       <Route exact path={"/adduser"} component={AddUser} />
       <Route exact path={"/users"} component={UsersData} />
+
+      <Route exact path={"*"} component={NotFound}/>
       </Switch>
       </BrowserRouter>
 
