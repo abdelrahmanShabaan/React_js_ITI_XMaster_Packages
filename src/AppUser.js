@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory, useLocation, useParams, useRouteMatch } from "react-router-dom/cjs/react-router-dom.min";
 
 
 
@@ -6,8 +7,18 @@ function AddUser(){
 
 
     //console.log(props history , location . match)
+    //can work with params (props)  or Hooks 
+        const location = useLocation();
+        console.log(location);
+        const history = useHistory();
+        console.log(history);
+        const match = useRouteMatch();
+        console.log(match);
+        const param = useParams();
+        console.log(param);
 
-  
+
+
         //define const to save come data from forms
         const[data, setData] = useState({
             name : "ali",
