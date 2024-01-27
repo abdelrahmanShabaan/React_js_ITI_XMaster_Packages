@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -22,6 +22,27 @@ function AppFunctionComponent(){
                 name: "abdelrahman",
             }) 
         }
+
+        // component did mount
+        useEffect(() =>{
+            console.log("compoenent did mount")
+        },[])
+
+        
+        //component did update + listen what will change
+        useEffect(() =>{
+            console.log("compoenent did mount")
+        },[name , info])
+
+
+        
+
+
+        
+
+
+
+
 
     // output
     return(
