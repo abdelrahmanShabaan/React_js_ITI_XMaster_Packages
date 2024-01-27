@@ -31,7 +31,10 @@ function AppFunctionComponent(){
         <h2> My name: {info.name}</h2>
         <h2> My age: {info.age}</h2>
         <h2> My city: {info.city}</h2>
+        {/* first way to call function with arrow function */}
         <button className="btn btn-info" onClick={()=>changeInfo()}>Change </button>
+        {/* oR we can use setFunction and pass parameter  */}
+        <button className="btn btn-danger" onClick={() => setName("kamel")}>Change name</button>
 
         </>
     )
