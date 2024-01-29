@@ -29,7 +29,7 @@ function Blogs() {
             <>
 
                 <select class="form-select" aria-label="Defualt select example" 
-                onChange={(e)=> handleChange(e)}>
+                     onChange={(e)=> handleChange(e)}>
                     <option selected>Choose...</option>
                     <option value="sports">sport</option>
                     <option value="programming">programming</option>
