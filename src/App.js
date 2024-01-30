@@ -21,7 +21,7 @@ function App() {
 
 
   return (
-    <div dir={lang=="AR" ? "rtl" : "ltr"}> 
+    <div dir={lang=="AR" ? "rtl" : "ltr" }> 
      {/* <h1>Hello News Page</h1>
        <Button variant="primary">Primary</Button>{' '}
       <Alert variant="info"> alert—check it out!</Alert>
