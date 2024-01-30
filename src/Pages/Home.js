@@ -11,7 +11,7 @@ function Home() {
     const dispatch = useDispatch()
     const changeMyLang = () =>{
         //dispatch action with action name useDispatch
-        dispatch(changeLanguage("AR")) 
+        dispatch(changeLanguage(lang == "EN" ? "AR" : "EN")) 
         
     }
         return(
