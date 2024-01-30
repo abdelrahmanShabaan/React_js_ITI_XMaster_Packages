@@ -37,6 +37,10 @@ function Navbar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="/blogs">Blogs</Link>
                 </li>
+                <li className="nav-item">
+                    {/* i need read payload from store */}
+                    <p className="nav-link">en</p>
+                </li>
                
             </ul>
             </div>
