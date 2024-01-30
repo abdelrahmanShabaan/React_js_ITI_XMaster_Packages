@@ -17,10 +17,11 @@ function App() {
 
     // Read language 
     const lang = useSelector((state) => state.language.lang)
-
+    // read theme 
+    const theme = useSelector((state) => state.theme.theme)
 
   return (
-    <div dir={lang==="AR" ? "rtl" : "ltr" }> 
+    <div dir={lang =="AR" ? "rtl" : "ltr"} className={theme == "Dark" && "text-light bg-dark"}> 
      {/* <h1>Hello News Page</h1>
        <Button variant="primary">Primary</Button>{' '}
       <Alert variant="info"> alert—check it out!</Alert>

@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { changeTheme } from "../Store/Actions/ThemeActions";
 
 function Navbar() {
 
@@ -8,6 +9,12 @@ function Navbar() {
 
     const theme = useSelector((state) => state.theme.theme)
 
+        //change function 
+        const dispatch = useDispatch()
+        const changeMyTheme = () => {
+            //dispatch action
+            dispatch(changeTheme(theme == "Light" ? "Dark" : "Light"))
+        }
 
     return (
 
@@ -50,6 +57,9 @@ function Navbar() {
                     {/* i need read data from store */}
                     {/* to get data from store we use hooks --> useSelector */}
                     <p className="nav-link">{theme}</p>
+                </li>
+                <li className="nav-item">
+                    <button className="btn btn-info" onClick={() => changeMyTheme()}>Change Theme</button>
                 </li>
                
             </ul>

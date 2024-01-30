@@ -1,6 +1,6 @@
 import { composeWithDevTools } from "redux-devtools-extension";
-import combineReducerss, { combineReducers } from "./Reducers/combineReducerss";
 import { createStore } from "redux";
+import combineReducerss from "./Reducers/combineReducerss";
 
 
 

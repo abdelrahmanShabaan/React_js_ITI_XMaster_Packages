@@ -3,7 +3,7 @@ const INITIAL_VALUE = {
     theme: "Light",
 }
 
-export default function themeReducer 
+export default function ThemeReducers 
 (state=INITIAL_VALUE, action) {
 
     switch(action.type){
