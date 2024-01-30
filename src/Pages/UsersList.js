@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { changeLoader } from "../Store/Actions/LoaderAction";
 import { getUsersList } from "../Store/Actions/UsersListAction";
+import Loader from "../Components/LoaderComponent";
 
 
 
@@ -18,7 +19,7 @@ function UsersList(){
     // const [users, setUsers] = useState([])
 
     // //loader
-   //  const loader = useSelector((state) => state.loader.isLoading)
+    //  const isLoading = useSelector((state) => state.loader.isLoading)
 
         //get data
             const users = useSelector((state) => state.list.users)
@@ -53,8 +54,20 @@ function UsersList(){
 
 
          {/* loader */}
+{/* 
+                {isLoading ? (<Loader />) : (
+                         users.map((user) => {
+                            return (
+                            <div className="container" key={user.id}>
+                               <Link to={`/user/${user.id}`}> <li className="text-info"> {user.id} </li> </Link>
+                                <li> {user.col1}  </li>
+                            </div>
+            
+                                )
+                            })
+                )}
+ */}
 
-                {/* {loader ? (<loader />) : (<ul> */}
 
                 {users.map((user, index) => {
                 return (
@@ -65,10 +78,6 @@ function UsersList(){
 
                     )
                 })}
-
-                {/* </ul>)}  */}
-
-
       
         
         </>
