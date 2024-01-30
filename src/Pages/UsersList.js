@@ -14,6 +14,8 @@ function UsersList(){
 
     const [users, setUsers] = useState([])
 
+    //loader
+
     useEffect(() => {
             axios.get("https://retoolapi.dev/rPDRQU/data")
             .then((res) => setUsers(res.data))
