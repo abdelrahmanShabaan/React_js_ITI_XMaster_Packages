@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { changeLoader } from "../Store/Actions/LoaderAction";
+import { getUsersList } from "../Store/Actions/UsersListAction";
 
 
 
@@ -17,11 +18,15 @@ function UsersList(){
     // const [users, setUsers] = useState([])
 
     // //loader
-    // const loader = useSelector((state) => state.loader.isLoading)
+   //  const loader = useSelector((state) => state.loader.isLoading)
 
         //get data
             const users = useSelector((state) => state.list.users)
-
+            const dispatch = useDispatch()
+            useEffect(() =>  {
+                dispatch(getUsersList())
+                    
+            },[])
 
     // //dispatcher
     // const dispatch = useDispatch()
@@ -48,8 +53,8 @@ function UsersList(){
 
 
          {/* loader */}
-{/* 
-                {loader ? (<loader />) : (<ul>
+
+                {/* {loader ? (<loader />) : (<ul> */}
 
                 {users.map((user, index) => {
                 return (
@@ -61,7 +66,7 @@ function UsersList(){
                     )
                 })}
 
-                </ul>)} */}
+                {/* </ul>)}  */}
 
 
       
