@@ -12,12 +12,16 @@ import NotFound from './Pages/NotFound';
 import UsersList from './Pages/UsersList';
 import UserDetails from './Pages/UserDetails';
 import Blogs from './Pages/Blogs';
+import { useSelector } from 'react-redux';
 
 function App() {
 
+    // Read language 
+    const lang = useSelector((state) => state.lang)
+
 
   return (
-    <div> 
+    <div dir={lang=="AR" ? "rtl" : "ltr"}> 
      {/* <h1>Hello News Page</h1>
        <Button variant="primary">Primary</Button>{' '}
       <Alert variant="info"> alert—check it out!</Alert>
