@@ -14,24 +14,32 @@ function UsersList(){
     // method ----> didMount --->useEffect 
     //promises --->resolve reject
 
-    const [users, setUsers] = useState([])
+    // const [users, setUsers] = useState([])
 
-    //loader
-    const loader = useSelector((state) => state.loader.isLoading)
+    // //loader
+    // const loader = useSelector((state) => state.loader.isLoading)
 
-    //dispatcher
-    const dispatch = useDispatch()
+        //get data
+            const users = useSelector((state) => state.list.users)
 
-    useEffect(() => {
-            axios.get("https://retoolapi.dev/rPDRQU/data")
-            .then((res) => {
+
+    // //dispatcher
+    // const dispatch = useDispatch()
+    
+    // useEffect(() => {
+    //         axios.get("https://retoolapi.dev/rPDRQU/data")
+    //         .then((res) => {
                 
-                setUsers(res.data)
-                dispatch(changeLoader(false))
+    //             setUsers(res.data)
+    //             dispatch(changeLoader(false))
                 
-            })
-            .catch((err) => console.log(err))
-        },[])
+    //         })
+    //         .catch((err) => console.log(err))
+    //     },[])
+
+
+
+
 
 
     return(
@@ -40,7 +48,7 @@ function UsersList(){
 
 
          {/* loader */}
-
+{/* 
                 {loader ? (<loader />) : (<ul>
 
                 {users.map((user, index) => {
@@ -53,7 +61,7 @@ function UsersList(){
                     )
                 })}
 
-                </ul>)}
+                </ul>)} */}
 
 
       
