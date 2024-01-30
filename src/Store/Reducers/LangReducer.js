@@ -1,8 +1,6 @@
 
 const INITIAL_VALUE = {
     lang: "EN",
-    theme: "Dark",
-    cart :0
 }
 
 export default function languageReducer 

@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-
 function Navbar() {
 
     // state == lang , cart , theme
     const language = useSelector((state) => state.language.lang)
+
+    const theme = useSelector((state) => state.theme.theme)
 
 
     return (
@@ -44,6 +45,11 @@ function Navbar() {
                     {/* i need read data from store */}
                     {/* to get data from store we use hooks --> useSelector */}
                     <p className="nav-link">{language}</p>
+                </li>
+                <li className="nav-item">
+                    {/* i need read data from store */}
+                    {/* to get data from store we use hooks --> useSelector */}
+                    <p className="nav-link">{theme}</p>
                 </li>
                
             </ul>
