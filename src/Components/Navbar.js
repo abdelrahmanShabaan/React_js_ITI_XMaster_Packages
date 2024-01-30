@@ -38,8 +38,8 @@ function Navbar() {
                     <Link className="nav-link" to="/blogs">Blogs</Link>
                 </li>
                 <li className="nav-item">
-                    {/* i need read payload from store */}
-                    <p className="nav-link">en</p>
+                    {/* i need read data from store */}
+                    <p className="nav-link">EN</p>
                 </li>
                
             </ul>
