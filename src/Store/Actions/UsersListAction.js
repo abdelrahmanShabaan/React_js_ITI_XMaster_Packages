@@ -1,10 +1,11 @@
 import axios from "axios"
+import { axiosInstance } from "../../Networking/axiosInstance"
 
 
 //call api ==> Axios
 export const getUsersList = (data) => (dispatch) =>{
 
-    return  axios.get("https://retoolapi.dev/rPDRQU/data")
+    return  axiosInstance.get("data")
     .then((res) => {
                 //WHEN BACK RES
                 dispatch({
