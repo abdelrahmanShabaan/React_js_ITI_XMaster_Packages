@@ -1,6 +1,6 @@
 
 const INITIAL_VALUE = {
-    loader: "TRUE",
+    isLoading: "TRUE",
 }
 
 export default function LoaderReducer 
@@ -10,7 +10,7 @@ export default function LoaderReducer
         case 'CHANGE_LOADER':
             return{
                 ...state, //everything
-                loader: action.payload
+                isLoading: action.payload
             }
 
             default: 

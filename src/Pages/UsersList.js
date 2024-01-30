@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { changeLoader } from "../Store/Actions/LoaderAction";
 
 
 
@@ -15,10 +17,19 @@ function UsersList(){
     const [users, setUsers] = useState([])
 
     //loader
+    const loader = useSelector((state) => state.loader.isLoading)
+
+    //dispatcher
+    const dispatch = useDispatch()
 
     useEffect(() => {
             axios.get("https://retoolapi.dev/rPDRQU/data")
-            .then((res) => setUsers(res.data))
+            .then((res) => {
+                
+                setUsers(res.data)
+                dispatch(changeLoader(false))
+                
+            })
             .catch((err) => console.log(err))
         },[])
 
@@ -27,15 +38,25 @@ function UsersList(){
         <>
          <h1 className="text-center text-primary">Users List</h1>
 
-         {users.map((user, index) => {
-            return (
+
+         {/* loader */}
+
+                {loader ? (<loader />) : (<ul>
+
+                {users.map((user, index) => {
+                return (
                 <div className="container">
                    <Link to={`/user/${user.id}`}> <li className="text-info"> {user.id} </li> </Link>
                     <li> {user.col1}  </li>
                 </div>
 
-            )
-         })}
+                    )
+                })}
+
+                </ul>)}
+
+
+      
         
         </>
     )
