@@ -4,6 +4,6 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 
 
-const mystore = createStore(languageReducer , composeWithDevTools)
+const mystore = createStore(languageReducer , composeWithDevTools())
 
 export default mystore;
