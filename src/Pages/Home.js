@@ -1,17 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeLanguage } from "../Store/Action";
+import { changeLanguage } from "../Store/Actions/LangActions";
 
 
 function Home() {
 
     
     // state == lang , cart , theme
-    const lang = useSelector((state) => state.lang)
+    const lang = useSelector((state) => state.language.lang)
     // change data 
     const dispatch = useDispatch()
     const changeMyLang = () =>{
         //dispatch action with action name useDispatch
-        dispatch(changeLanguage(lang == "EN" ? "AR" : "EN")) 
+        dispatch(changeLanguage(lang === "EN" ? "AR" : "EN")) 
         
     }
         return(

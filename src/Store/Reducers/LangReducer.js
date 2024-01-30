@@ -1,4 +1,3 @@
-import { Switch } from "react-router-dom/cjs/react-router-dom.min"
 
 const INITIAL_VALUE = {
     lang: "EN",
@@ -16,11 +15,6 @@ export default function languageReducer
                 lang: action.payload
             }
 
-        case 'CHANGE_THEME':
-            return{
-                ...state, //everything
-                theme: action.payload
-            }
             default: 
             return state
     }

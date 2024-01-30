@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddUser from './AppUser';
@@ -17,11 +16,11 @@ import { useSelector } from 'react-redux';
 function App() {
 
     // Read language 
-    const lang = useSelector((state) => state.lang)
+    const lang = useSelector((state) => state.language.lang)
 
 
   return (
-    <div dir={lang=="AR" ? "rtl" : "ltr" }> 
+    <div dir={lang==="AR" ? "rtl" : "ltr" }> 
      {/* <h1>Hello News Page</h1>
        <Button variant="primary">Primary</Button>{' '}
       <Alert variant="info"> alert—check it out!</Alert>

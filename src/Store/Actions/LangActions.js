@@ -8,10 +8,3 @@ export const changeLanguage = (payload) =>{
             payload
     }
 }
-
-export const changeTheme = (payload) =>{
-    return {
-            type: "CHANGE_THEME",
-            payload
-    }
-}
