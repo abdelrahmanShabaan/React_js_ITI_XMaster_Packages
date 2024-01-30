@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Cart from "../Components/Cart";
+import { axiosInstance } from "../Networking/axiosInstance";
 
 
 
@@ -17,7 +18,8 @@ function UserDetails() {
                 //useEffect to loops in the data
                 useEffect(()=> {
                     //then axios
-                    axios(`https://retoolapi.dev/rPDRQU/data/${userId.id}`)
+                    axiosInstance.get(`data/${userId.id}`)
+                    // axios(`https://retoolapi.dev/rPDRQU/data/${userId.id}`)
                     .then((res) => {setUserInfo(res.data) })
                     .catch((err) => {console.log(err)})
 
