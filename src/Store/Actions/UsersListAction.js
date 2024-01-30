@@ -1,10 +1,10 @@
-//type (name)
-//payload 
+import axios from "axios"
 
 
-export const changeLanguage = (payload) =>{
-    return {
-            type: "CHANGE_LANG",
-            payload
-    }
+//call api ==> Axios
+export const getUsersList = (data) => (dispatch) =>{
+
+    
+    return  axios.get("https://retoolapi.dev/rPDRQU/data")
+
 }
